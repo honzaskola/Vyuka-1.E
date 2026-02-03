@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Anti-Santa Recruitment</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+
+<header>
+    <!-- Vánoční SVÍTKA (světýlka) -->
+    <ul class="lightrope">
+        <li></li><li></li><li></li><li></li><li></li><li></li>
+        <li></li><li></li><li></li><li></li><li></li><li></li>
+    </ul>
+
+    <img src="OIP.jfif" alt="Anti Santa Logo" class="logo">
+    <nav>
+        <a href="index.html">Domů</a>
+        <a href="pozice.html">Pozice</a>
+        <a href="prihlaska.html">Přihláška</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Přidej se k Anti-Santově elitní jednotce</h1>
+    <p>Zapomeň na koledy. Zapomeň na cukroví. Přidej se k temné straně Vánoc!</p>
+    <a class="cta" href="pozice.html">Zobrazit nábor</a>
+</section>
+
+<footer>© 2025 Anti-Santa Recruitment Unit</footer>
+
+<!-- SNÍH -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const snowContainer = document.createElement("div");
+    snowContainer.className = "snow-container";
+    document.body.appendChild(snowContainer);
+
+    const count = 160;
+    for (let i = 0; i < count; i++) {
+        const flake = document.createElement("div");
+        flake.className = "snowflake";
+        flake.style.left = Math.random() * 100 + "vw";
+        flake.style.animationDelay = Math.random() * 8 + "s";
+        flake.style.animationDuration = 6 + Math.random() * 8 + "s";
+        flake.style.fontSize = 10 + Math.random() * 20 + "px";
+        flake.innerHTML = "❄";
+        snowContainer.appendChild(flake);
+    }
+});
+</script>
+
+</body>
+</html>
